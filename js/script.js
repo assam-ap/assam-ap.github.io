@@ -23,8 +23,10 @@ let name = document.querySelector("#nom")
 let email = document.querySelector("#email")
 let tel = document.querySelector("#tel")
 let message = document.querySelector("#message")
+let button = document.querySelector("#contact-us-submit-button");
 async function handleSubmit(event) {
     event.preventDefault();
+    button.disabled = true;
     let data = new FormData();
     data.append("email", email.value)
     data.append("message", `Nom Complet: ${name.value} \nTelephone: ${tel.value} \nMessage: ${message.value}`)
@@ -38,7 +40,10 @@ async function handleSubmit(event) {
     if (response.ok) {
         status.innerHTML = "Merci pour votre soumission! nous vous répondrons dans les plus brefs délais.";
         form.reset()
-    } else status.innerHTML = "Oops! Un problème est survenu lors de l'envoi, merci de réessayer plus tard!";
+    } else {
+        status.innerHTML = "Oops! Un problème est survenu lors de l'envoi, merci de réessayer plus tard!";
+        button.disabled = false;
+    }
 }
 
 form.addEventListener("submit", handleSubmit)
