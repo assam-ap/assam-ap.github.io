@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <title>ASSAM Apprentissage</title>
+</head>
+<body>
+<nav id="navbar" class="sticky top-0 z-50 bg-white border-b-2 border-gray-200 px-4 py-2 sm:rounded duration-500">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="#acceuil" class="flex items-center">
+            <img src="img/logo.webp" class="h-14" alt="Assam Logo">
+        </a>
+        <button id="menu-button"
+                type="button"
+                class="py-2 px-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-200">
+            <i class="bi bi-list text-2xl"></i>
+        </button>
+        <div id="nav" class="hidden w-full lg:block lg:w-auto">
+            <ul class="flex flex-col p-4 mt-4 lg:mt-0 lg:flex-row lg:space-x-12 lg:text-base lg:border-0 lg:bg-white bg-gray-50 rounded-lg border border-gray-100">
+                <li>
+                    <a href="#acceuil"
+                       class="block py-2 px-4 text-black font-medium rounded md:border-0 md:hover:text-blue-700 md:p-0">
+                        <i class="bi bi-house-door text-base mr-1"></i>
+                        Acceuil
+                    </a>
+                </li>
+                <li>
+                    <a href="#qui-somme-nous"
+                       class="block py-2 px-4 text-black font-medium rounded md:border-0 md:hover:text-blue-700 md:p-0">
+                        <i class="bi bi-info-circle text-base mr-1"></i>
+                        Qui somme nous ?
+                    </a>
+                </li>
+                <li>
+                    <a href="#formations"
+                       class="block py-2 px-4 text-black font-medium rounded md:border-0 md:hover:text-blue-700 md:p-0">
+                        <i class="bi bi-book text-base mr-1"></i>
+                        Formations
+                    </a>
+                </li>
+                <li>
+                    <a href="#services"
+                       class="block py-2 px-4 text-black font-medium rounded md:border-0 md:hover:text-blue-700 md:p-0">
+                        <i class="bi bi-box text-base mr-1"></i>
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactez-nous"
+                       class="block py-2 px-4 text-black font-medium rounded md:border-0 md:hover:text-blue-700 md:p-0">
+                        <i class="bi bi-send text-base mr-1"></i>
+                        Contactez nous
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="relative">
+    <!-- Section 1 -->
+    <section id="acceuil"
+             class="h-[85vh] bg-section1 flex justify-center items-center">
+        <div class="w-100 flex flex-col justify-center items-center space-y-8 px-6 lg:px-0 ">
+            <h1 class="text-center text-4xl text-white font-bold text-shadow-big uppercase leading-normal">
+                votre
+                <span class="underline underline-offset-auto decoration-[#F1870A] decoration-8">
+                compagnon
+            </span>
+                scolaire
+                <br>
+                et professionnel
+                <br>
+            </h1>
+            <h2 class="text-2xl text-white text-center font-medium text-shadow-big">
+                cabinet de formation professionnelle continue
+            </h2>
+            <a id="join-us-button" href="#contactez-nous" type="submit" class="py-3 px-10 bg-blue font-semibold text-xl text-white rounded-xl button-shadow text-shadow-small border-b-2 border-[#145370] duration-500">
+                S'inscrire
+            </a>
+        </div>
+    </section>
+    <!-- Section 2 -->
+    <section id="qui-somme-nous"
+             class="min-h-[80vh] flex flex-col justify-around items-center py-5 bg-section2 border-b border-gray-100">
+        <h1 class="py-3 text-center text-3xl font-bold underline underline-offset-auto decoration-[#F1870A] decoration-8">
+            Qui Somme Nous ?
+        </h1>
+        <article class="flex flex-col justify-center items-center py-4 w-100 lg:max-w-[40%]">
+            <h2 class="text-center text-3xl text-blue font-bold py-4">
+                ASSAM Apprentissage Privé
+            </h2>
+            <p class="text-center text-xl font-medium px-6">
+                Un cabinet de formation professionnelle continue basé à Casablanca, mettant au service des
+                particuliers et des entreprises des solutions en termes de savoir et de connaissances, afin de
+                les accompagner dans l’atteinte de leurs objectifs.
+            </p>
+        </article>
+        <div class="max-w-screen-xl grid grid-rows-2 gap-4 lg:gap-8 lg:grid-rows-1 lg:grid-cols-2 lg:divide-x lg:divide-cyan-700 py-4">
+            <article class="text-center lg:text-right px-5">
+                <h3 class="text-2xl font-bold leading-loose">
+                    Nos services sont proposées aux :
+                </h3>
+                <ul class="lg:text-right text-xl font-medium leading-loose">
+                    <li>- Entreprises de toutes les tailles</li>
+                    <li>- Cadres et fonctionnaires</li>
+                    <li>- Employés et salariés</li>
+                    <li>- Travailleurs indépendants</li>
+                    <li>- Demandeurs d’emploi</li>
+                    <li>- Elèves, étudiants et stagiaires</li>
+                </ul>
+            </article>
+            <article class="text-center lg:text-left px-5">
+                <h3 class="text-2xl font-bold leading-loose">
+                    Pourquoi choisir ASSAM ?
+                </h3>
+                <ul class="text-xl font-medium leading-loose">
+                    <li>- Large choix de formations dans plusieurs domaines</li>
+                    <li>- Formateurs spécialisés et expérimentés</li>
+                    <li>- Conditions de déroulement des formations agréables et optimales</li>
+                    <li>- Planning flexible (jours, soirs, et week-end)</li>
+                    <li>- Prix adaptés à tous les budgets</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <!-- Section 3 -->
+    <section id="formations" class="min-h-[110vh] flex flex-col justify-around items-center bg-section3 py-5">
+        <h1 class="py-4 text-center text-3xl font-bold underline underline-offset-auto decoration-[#F1870A] decoration-8">
+            Nos Formations
+        </h1>
+        <div class="py-4 flex flex-col lg:grid lg:grid-cols-3 gap-10 px-10 lg:px-0 lg:max-w-[60%]">
+            <!-- BOX-1 -->
+            <article class="flex flex-col space-y-6 bg-[#fcfcfc] border border-gray-300 drop-shadow-md rounded-lg p-5">
+                <p class="text-center">
+                    <i class="text-5xl my-2 text-blue bi bi-chat-left-quote"></i>
+                </p>
+                <h2 class="text-xl font-bold text-center text-blue">
+                    Communication et Marketing
+                </h2>
+                <ul class="text-center text-base font-medium leading-loose">
+                    <li>Communication professionnelle.</li>
+                    <li>Français commercial.</li>
+                    <li>Business English.</li>
+                    <li>Marketing.</li>
+                    <li>Marketing digital.</li>
+                </ul>
+            </article>
+            <!-- BOX-2 -->
+            <article
+                    class="flex flex-col justify-around bg-[#fcfcfc] border border-gray-300 drop-shadow-md rounded-lg p-5">
+                <p class="text-center">
+                    <i class="text-5xl my-2 text-blue bi bi-code-slash"></i>
+                </p>
+                <div class="text-xl font-bold text-center text-blue">
+                    Informatique et Systèmes d’information
+                </div>
+                <ul class="text-center text-base font-medium leading-loose">
+                    <li>Bureautique (Microsoft Office).</li>
+                    <li>Multimédia.</li>
+                    <li>Infographie.</li>
+                    <li>Développement Web.</li>
+                    <li>Gestion de base de données.</li>
+                    <li>Réseaux informatiques.</li>
+                </ul>
+            </article>
+            <!-- BOX-3 -->
+            <article class="flex flex-col space-y-6 bg-[#fcfcfc] border border-gray-300 drop-shadow-md rounded-lg p-5">
+                <p class="text-center">
+                    <i class="text-5xl my-2 text-blue bi bi-graph-up-arrow"></i>
+                </p>
+                <div class="text-xl font-bold text-center text-blue">Gestion et Finances</div>
+                <ul class="text-center text-base font-medium leading-loose">
+                    <li>Gestion financière.</li>
+                    <li>Comptabilité/Fiscalité marocaine.</li>
+                    <li>Comptabilité Analytique.</li>
+                    <li>Contrôle de gestion.</li>
+                    <li>Gestion de la trésorerie.</li>
+                    <li>Responsable administrative et financier.</li>
+                </ul>
+            </article>
+            <!-- BOX-4 -->
+            <article class="flex flex-col space-y-6 bg-[#fcfcfc] border border-gray-300 drop-shadow-md rounded-lg p-5">
+                <p class="text-center">
+                    <i class="text-5xl my-2 text-blue bi bi-diagram-3"></i>
+                </p>
+                <div class="text-xl font-bold text-center text-blue">Management</div>
+                <ul class="text-center text-base font-medium leading-loose">
+                    <li>Direction et Management d’entreprise.</li>
+                    <li>Management des projets et des équipes.</li>
+                    <li>Gestion des ressources humaines.</li>
+                    <li>Entrepreneuriat.</li>
+                    <li>Assistanat.</li>
+                </ul>
+            </article>
+            <!-- BOX-5 -->
+            <article class="flex flex-col space-y-6 bg-[#fcfcfc] border border-gray-300 drop-shadow-md rounded-lg p-5">
+                <p class="text-center">
+                    <i class="text-5xl my-2 text-blue bi bi-book"></i>
+                </p>
+                <div class="text-xl font-bold text-center text-blue">Formation Pédagogique</div>
+                <ul class="text-center text-base font-medium leading-loose">
+                    <li>Qualification pour travailler dans l’enseignement privé et public.</li>
+                    <li>Le développement des compétences.</li>
+                    <li>Science pédagogique.</li>
+                    <li>Gestion de classe.</li>
+                </ul>
+            </article>
+            <!-- BOX-6 -->
+            <article class="flex flex-col space-y-6 bg-[#fcfcfc] border border-gray-300 drop-shadow-md rounded-lg p-5">
+                <p class="text-center">
+                    <i class="text-5xl my-2 text-blue bi bi-tv"></i>
+                </p>
+                <div class="text-xl font-bold text-center text-blue">Cours En Ligne</div>
+                <ul class="text-center text-base font-medium leading-loose">
+                    <li>Bientôt disponible ..</li>
+                </ul>
+            </article>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-x-10 md:space-y-0 py-4">
+            <span class="text-2xl font-bold">Besoin de plus d’informations ?</span>
+            <a id="contact-us-section3" href="#contactez-nous" class="bg-white hover:bg-gray-50 rounded-xl px-5 py-2 text-lg font-bold drop-shadow-md border border-[#1B7096] text-blue duration-500">
+                Contactez nous
+            </a>
+        </div>
+    </section>
+    <!-- Section 4 -->
+    <section id="services" class="bg-section4 min-h-[80vh] flex flex-col justify-around items-center py-5">
+        <h1 class="py-4 text-center text-3xl text-white font-bold underline underline-offset-auto decoration-[#F1870A] decoration-8">
+            Nos Services
+        </h1>
+        <div class="container flex flex-col lg:grid lg:grid-cols-3 gap-10 pt-5">
+            <!-- icon 1 -->
+            <article class="flex flex-col space-y-5 items-center text-center">
+                <img src="./img/1.webp" alt="icon"
+                     class="w-60 rounded-full border-4 border-white aspect-square drop-shadow-lg">
+                <h2 class="text-3xl font-semibold text-white">Coaching</h2>
+                <hr class="w-2/5 border-white">
+                <ul class="text-lg font-base text-white leading-loose">
+                    <li>Coaching scolaire</li>
+                    <li>Coaching de vie</li>
+                    <li>Coaching d’affaire</li>
+                </ul>
+            </article>
+            <!-- icon 2 -->
+            <article class="flex flex-col space-y-5 items-center text-center">
+                <img src="img/3.webp" alt="icon"
+                     class="w-60 rounded-full border-4 border-white aspect-square drop-shadow-lg">
+                <h2 class="text-3xl font-semibold text-white">Services aux Entreprises</h2>
+                <hr class="w-2/5 border-white">
+                <ul class="text-lg font-base text-white leading-loose">
+                    <li>Création et équipement d’entreprises</li>
+                    <li>Conseil et Accompagnement</li>
+                    <li>nimation des séminaires</li>
+                </ul>
+            </article>
+            <!-- icon 3 -->
+            <article class="flex flex-col space-y-5 items-center text-center">
+                <img src="img/2.webp" alt="icon"
+                     class="w-60 rounded-full border-4 border-white aspect-square drop-shadow-lg">
+                <h2 class="text-3xl font-semibold text-white">Services Scolaires</h2>
+                <hr class="w-2/5 border-white">
+                <ul class="text-lg font-base text-white leading-loose">
+                    <li>Cours de soir (tous les niveaux)</li>
+                    <li>Cours des langues étrangères</li>
+                    <li>Préparation aux concours Post-Bac</li>
+                    <li>Organisation des activités parascolaires</li>
+                </ul>
+            </article>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-x-10 md:space-y-0 py-4">
+            <span class="text-2xl text-white font-bold">Besoin d’aide ?</span>
+            <a id="contact-us-section4" href="#contactez-nous" class="bg-[#F1870A] rounded-xl px-5 py-2 text-lg font-bold drop-shadow-md text-white duration-500">
+                Contactez nous
+            </a>
+        </div>
+    </section>
+    <!-- Section 5 -->
+    <section id="contactez-nous" class="min-h-[75vh] bg-section5 flex flex-col justify-around items-center py-5">
+        <h1 class="py-4 text-center text-3xl text-black font-bold underline underline-offset-auto decoration-[#F1870A] decoration-8">
+            Contactez Nous
+        </h1>
+        <div class="flex flex-col space-y-8 justify-center items-center bg-gray-50 border border-gray-300 drop-shadow-md rounded-xl py-6 px-6 lg:px-14 mx-8 lg:mx-0 my-4">
+            <i class="bi bi-send text-5xl text-blue"></i>
+            <p class="font-medium text-lg lg-text-[23px] text-black text-center">
+                Merci de bien vouloir remplir ce formulaire afin de nous faire part de vos demandes.
+            </p>
+            <form id="contactez-nous-form" action="https://formspree.io/f/xrgdgqwo" method="post" class="w-full flex flex-col space-y-4">
+                <input type="text" id="nom"
+                       class="bg-white border border-gray-300 text-black text-base rounded-md focus:ring-0 p-2"
+                       placeholder="Nom*" required>
+                <input type="email" name="email" id="email"
+                       class="bg-white border border-gray-300 text-black text-base rounded-md focus:ring-0 p-2"
+                       placeholder="Courriel*" required>
+                <input type="tel" id="tel"
+                       class="bg-white border border-gray-300 text-black text-base rounded-md focus:ring-0 p-2"
+                       placeholder="Telephone*" required>
+                <textarea name="message" id="message"
+                        class="block bg-white border border-gray-300 text-black text-base rounded-md focus:ring-0 p-2 h-32"
+                        placeholder="Message*" required></textarea>
+                <div class="flex justify-between items-center">
+                    <p id="form-status" class="text-base font-medium"></p>
+                    <button type="submit"
+                            class="text-white text-lg bg-[#F1870A] focus:outline-none rounded-lg sm:w-auto px-5 py-2.5 text-center font-medium border-b-2 border-[#D97909] drop-shadow-md">
+                        Envoyer
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="w-100 bg-footer flex justify-center text-white py-10 px-8 lg:px-0">
+    <div class="flex flex-col space-y-10 lg:grid lg:grid-cols-3 lg:gap-16 lg:space-y-0 lg:max-w-[60%]">
+        <div class="flex flex-col justify-start space-y-4">
+            <img src="img/footer-logo.webp" alt="footer-logo" class="w-24 aspect-auto">
+            <p class="text-justify font-base">
+                un cabinet de formation professionnelle continue basé à Casablanca, dont la mission principale est de
+                développer le savoir et la compétence au sein des entreprises marocaines
+            </p>
+        </div>
+        <div class="flex flex-col justify-start items-left space-y-5">
+            <h2 class="text-xl font-bold">Informations</h2>
+            <div class="flex justify-start space-x-4">
+                <ul class="font-semibold">
+                    <li>Fix:</li>
+                    <li>Telephone:</li>
+                    <li>Email:</li>
+                    <li>Adresse:</li>
+                </ul>
+                <ul class="font-base">
+                    <li>05 26 15 15 18</li>
+                    <li>06 45 43 91 84</li>
+                    <li>assam.sarl@gmail.com</li>
+                    <li>Quartier Moukhtar Soussi, Rue 19, Num 3, Mabrouka, Casablanca</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col justify-start space-y-5">
+            <h2 class="text-xl font-bold">Réseaux Sociaux</h2>
+            <div class="flex space-x-8">
+                <i title="Facebook" class="bi bi-facebook text-4xl"></i>
+                <i title="Instagram" class="bi bi-instagram text-4xl"></i>
+                <i title="Whatsapp" class="bi bi-whatsapp text-4xl"></i>
+                <i title="E-mail" class="bi bi-envelope text-4xl"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
