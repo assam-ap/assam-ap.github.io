@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="../img/ico.png">
+    <script src="../js/script.js" defer></script>
+    <title>ASSAM Apprentissage</title>
+</head>
+<body>
+<nav id="navbar" class="sticky top-0 z-50 bg-white border-b-2 border-gray-200 px-4 py-2 sm:rounded duration-500">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="#" class="flex items-center">
+            <img src="../img/logo.webp" class="h-12 md:h-14" alt="Assam Logo">
+        </a>
+        <button id="menu-button"
+                type="button"
+                class="py-2 px-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-200">
+            <i class="bi bi-list text-xl"></i>
+        </button>
+        <div id="nav" class="hidden w-full lg:block lg:w-auto duration-500">
+            <ul class="flex flex-col p-4 mt-4 lg:mt-0 lg:flex-row lg:space-x-12 lg:text-sm lg:border-0 lg:bg-white bg-gray-50 rounded-lg border border-gray-100">
+                <li>
+                    <a href="/"
+                       class="uppercase block py-2 px-4 text-black font-medium rounded md:border-0 md:hover:text-[#176081] md:p-0 duration-500">
+                        <i class="bi bi-house-door text-sm mr-1"></i>
+                        Acceuil
+                    </a>
+                </li>
+                <li>
+                    <a href="/blog"
+                       class="uppercase block py-2 px-4 text-black font-medium rounded md:border-0 md:hover:text-[#176081] md:p-0 duration-500">
+                        <i class="bi bi-layout-text-window-reverse text-sm mr-1"></i>
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="/#contactez-nous"
+                       class="uppercase block py-2 px-4 text-black font-medium rounded md:border-0 md:hover:text-[#176081] md:p-0 duration-500">
+                        <i class="bi bi-send text-sm mr-1"></i>
+                        Contactez-nous
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="relative p-6 bg-section3">
+    <h1 class="uppercase mt-2 mb-8 text-center text-xl md:text-2xl font-bold underline underline-offset-auto decoration-[#F1870A] decoration-[5.5px]">
+        Blog
+    </h1>
+    <section class="py-5 flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:px-0 lg:w-8/12 mx-auto">
+        <article class="flex flex-col space-y-3 bg-[#fcfcfc] border border-gray-300 drop-shadow-md rounded-lg p-4">
+            <img src="img/dyslexie.jpg" alt="" class="h-56 w-full rounded-lg object-cover">
+            <h1 class="font-arabic text-center font-bold text-xl uppercase" dir="rtl">عسر القراءة من محنة الى منحة</h1>
+            <p class="font-inter text-center text-sm uppercase text-gray-400">19/08/2022</p>
+            <a href="./posts/dyslexie" class="mx-auto max-w-max font-inter hover:bg-[#176081] py-2 px-6 bg-blue text-sm text-white rounded-lg text-shadow-small border-b-2 border-[#145370] duration-500">Lire l'article</a>
+        </article>
+        <article class="flex flex-col space-y-3 bg-[#fcfcfc] border border-gray-300 drop-shadow-md rounded-lg p-4">
+            <img src="img/pensee-positive.jpg" alt="" class="h-56 w-full rounded-lg object-cover">
+            <h1 class="font-arabic text-center font-bold text-xl uppercase" dir="rtl">التفكير الايجابي</h1>
+            <p class="font-inter text-center text-sm uppercase text-gray-400">19/08/2022</p>
+            <a href="./posts/pensee-positive" class="mx-auto max-w-max font-inter hover:bg-[#176081] py-2 px-6 bg-blue text-sm text-white rounded-lg text-shadow-small border-b-2 border-[#145370] duration-500">Lire l'article</a>
+        </article>
+    </section>
+</main>
+<footer class="w-100 bg-footer flex justify-center text-white py-10 px-8 lg:px-0">
+    <div class="flex flex-col space-y-10 lg:grid lg:grid-cols-3 lg:gap-16 lg:space-y-0 lg:max-w-[60%]">
+        <div class="flex flex-col justify-start space-y-4">
+            <img src="../img/footer-logo.webp" alt="footer-logo" class="w-24 aspect-auto">
+            <p class="font-inter text-justify font-base">
+                un cabinet de formation professionnelle continue basé à Casablanca, dont la mission principale est de
+                développer le savoir et la compétence au sein des entreprises marocaines
+            </p>
+        </div>
+        <div class="flex flex-col justify-start items-left space-y-5">
+            <h2 class="text-lg uppercase font-bold">Informations</h2>
+            <div class="flex justify-start space-x-4">
+                <ul class="font-inter font-semibold leading-loose">
+                    <li>Fix:</li>
+                    <li>Telephone:</li>
+                    <li>Email:</li>
+                    <li>Adresse:</li>
+                </ul>
+                <ul class="font-inter font-base leading-loose">
+                    <li>05 26 15 15 18</li>
+                    <li>06 45 43 91 84</li>
+                    <li>assam.sarl@gmail.com</li>
+                    <li>Quartier Moukhtar Soussi, Rue 19, Num 3, Mabrouka, Casablanca</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col justify-start space-y-5">
+            <h2 class="text-lg uppercase font-bold">Réseaux Sociaux</h2>
+            <div class="flex space-x-8">
+                <i title="Facebook" class="bi bi-facebook text-3xl"></i>
+                <i title="Instagram" class="bi bi-instagram text-3xl"></i>
+                <i title="Whatsapp" class="bi bi-whatsapp text-3xl"></i>
+                <i title="E-mail" class="bi bi-envelope text-3xl"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
