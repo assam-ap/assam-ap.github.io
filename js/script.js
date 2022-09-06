@@ -1,13 +1,3 @@
-// hiding navbar
-let navbar = document.querySelector("#navbar")
-let prevScrollPosition = window.pageYOffset;
-window.onscroll = function () {
-    let currentScrollPosition = window.pageYOffset;
-    if (prevScrollPosition > currentScrollPosition) navbar.style.top = "0";
-    else navbar.style.top = "-75px";
-    prevScrollPosition = currentScrollPosition;
-}
-
 // responsive navbar
 let btn = document.querySelector("#menu-button");
 let menu = document.querySelector("#nav");
@@ -23,6 +13,7 @@ let email = document.querySelector("#email")
 let tel = document.querySelector("#tel")
 let message = document.querySelector("#message")
 let button = document.querySelector("#contact-us-submit-button");
+
 async function handleSubmit(event) {
     event.preventDefault();
     button.disabled = true;
@@ -46,3 +37,18 @@ async function handleSubmit(event) {
 }
 
 form.addEventListener("submit", handleSubmit)
+
+
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+});
