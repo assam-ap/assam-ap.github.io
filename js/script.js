@@ -1,3 +1,13 @@
+// hiding navbar
+let navbar = document.querySelector("#navbar")
+let prevScrollPosition = window.pageYOffset;
+window.onscroll = function () {
+    let currentScrollPosition = window.pageYOffset;
+    if (prevScrollPosition <= currentScrollPosition) navbar.style.top = "-75px";
+    else navbar.style.top = "0";
+    prevScrollPosition = currentScrollPosition;
+}
+
 // responsive navbar
 let btn = document.querySelector("#menu-button");
 let menu = document.querySelector("#nav");
